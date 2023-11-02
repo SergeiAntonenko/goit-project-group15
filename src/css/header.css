@@ -1,2 +1,29 @@
 .header {
+    background: #121212;
+}
+
+.header-container {
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.20);
+}
+
+.header-logo {
+    margin-left: 20px;
+    display: inline;
+}
+
+.header-nav {
+    height: 50px;
+    display: flex; 
+    align-items: center;   
+    justify-content: center;
+}
+
+.header-camera-btn {
+    margin-right: 20px;
+    margin-left: 98px;
+}
+
+.header-menu-btn {
+    margin-right: 20px;
 }
