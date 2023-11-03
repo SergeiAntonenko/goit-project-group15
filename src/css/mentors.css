@@ -1,2 +1,39 @@
 .mentors {
+  padding: 40px 0;
+}
+.mentors-container {
+  padding: 0 20px;
+}
+.mentors-title {
+  padding-bottom: 40px;
+}
+.mentors-accent {
+}
+.mentors-members {
+}
+.mentors-item {
+  max-width: 185px;
+  margin: 0 auto 40px;
+}
+.mentors-item:last-child {
+  margin-bottom: 0;
+}
+.mentors-picture {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 16px;
+}
+.mentors-image {
+  margin: 0 auto;
+  border-radius: 50%;
+}
+.mentors-content {
+  padding: 0 18px;
+}
+.mentors-subtitle {
+  text-align: center;
+  margin-bottom: 4px;
+}
+.members-experience {
+  text-align: center;
 }
