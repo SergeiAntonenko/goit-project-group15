@@ -29,16 +29,3 @@ img {
   max-width: 100%;
   height: auto;
 }
-
-body {
-  font-family: 'DM Sans', sans-serif;
-  font-size: 16px;
-  line-height: 1.25;
-  color: #fff;
-  background-color: #121212;
-}
-
-.container {
-  padding-left: 15px;
-  padding-right: 15px;
-}
