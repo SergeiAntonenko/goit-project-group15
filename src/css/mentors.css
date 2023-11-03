@@ -1,16 +1,24 @@
-/* .mentors {
+.mentors {
+  padding: 40px 0;
 }
 .mentors-container {
+  padding: 0 20px;
 }
 .mentors-title {
+  padding-bottom: 40px;
 }
 .mentors-members {
 }
 .mentors-item {
 }
-.mentors-picture {
+.mentors-image {
+  margin: 0 auto;
+}
+.mentors-content {
 }
 .mentors-subtitle {
+  text-align: center;
 }
 .members-experience {
-} */
+  text-align: center;
+}
