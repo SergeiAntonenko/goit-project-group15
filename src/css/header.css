@@ -32,7 +32,14 @@
 }
 
 .header-camera {
+    width: 32px;
+    height: 32px;
     margin-left: 98px;
+    fill: #BEA69E66;
+    background-color: #1D1D1D;
+    border: 0px;
+    border-radius: 50%;
+    padding: 8px;
 }
 
 .header-camera-svg {
