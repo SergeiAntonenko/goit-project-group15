@@ -1,3 +1,9 @@
+
+
+.header-hero {
+
+}
+
 .header {
     background: #121212;
 }
@@ -12,18 +18,37 @@
     display: inline;
 }
 
+.header-logo-svg {
+
+}
+
 .header-nav {
+
+}
+
+.header-menu {
     height: 50px;
     display: flex; 
     align-items: center;   
     justify-content: center;
 }
 
-.header-camera-btn {
+.header-camera {
     margin-right: 20px;
     margin-left: 98px;
 }
 
-.header-menu-btn {
+.header-camera-svg {
+    
+}
+
+.header-menu {
     margin-right: 20px;
 }
+
+.header-menu-svg {
+    margin-right: 20px;
+}
+
+
+
