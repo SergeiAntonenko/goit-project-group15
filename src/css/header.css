@@ -1,3 +1,8 @@
+
+header-hero. {
+
+}
+
 .header {
     background: #121212;
 }
@@ -7,11 +12,6 @@
     border: 1px solid rgba(255, 255, 255, 0.20);
 }
 
-.header-logo {
-    margin-left: 20px;
-    display: inline;
-}
-
 .header-nav {
     height: 50px;
     display: flex; 
@@ -19,11 +19,30 @@
     justify-content: center;
 }
 
-.header-camera-btn {
+.header-logo {
+    margin-left: 20px;
+    display: inline;
+}
+
+.header-logo-svg {
+
+}
+
+.header-camera {
     margin-right: 20px;
     margin-left: 98px;
 }
 
-.header-menu-btn {
+.header-camera-svg {
+    margin-right: 20px;
+    margin-left: 98px;
+}
+
+.header-menu {
     margin-right: 20px;
 }
+
+.header-menu-svg {
+
+}
+
