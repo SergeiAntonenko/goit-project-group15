@@ -1,25 +1,27 @@
 .signup {
   padding-bottom: 80px;
 }
-.container {
-  width: 375px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin: 0 auto;
+
+.section-title {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: -0.04em;
+  margin-bottom: 20px;
 }
-/* .sign-up-form-wrap {
-} */
+.section-title-wrap {
+  color: #bea69e;
+}
 .sing-up-text {
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
+  margin-bottom: 41px;
 }
-/* .sut .sign-up-form {
-}
-.sign-up-form-wrap {
-} */
+
 .form-field {
-  width: 335px;
+  width: 100%;
+  max-width: 335px;
   color: #fff;
   font-family: DM Sans, sans-serif;
   font-size: 16px;
@@ -28,6 +30,17 @@
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   padding: 14px 18px;
+  margin-bottom: 8px;
+  resize: none;
+  outline: transparent;
+}
+
+.form-field:focus {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.form-field:last-child {
+  margin-bottom: 40px;
 }
 
 .form-field::placeholder {
@@ -37,19 +50,32 @@
   line-height: 1.25;
   opacity: 0.7;
 }
-/* .submit-btn {
+.submit-btn {
+  width: 100%;
+  max-width: 335px;
+  padding: 14px;
+  border-radius: 12px;
+  background: #fff;
+  color: #121212;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.25;
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
 .privacy-text {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 12px;
+  line-height: 1.33;
 }
 .privacy-text-link {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: DM Sans;
+  font-size: 12px;
+  line-height: 1.25;
+  text-decoration-line: underline;
 }
 .sign-up-images {
+  display: none;
 }
-.sign-up-item-sm {
-}
-.sing-up-sm-image {
-}
-.sign-up-item-lg {
-}
-.sing-up-lg-image {
-} */
