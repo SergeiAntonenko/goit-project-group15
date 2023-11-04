@@ -1,2 +1,103 @@
 .mentors {
+  margin-bottom: 80px;
+}
+
+.mentors-container {
+  max-width: 335px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.mentors-title {
+  margin-bottom: 40px;
+  text-transform: capitalize;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: -0.04em;
+}
+
+.mentors-accent {
+  color: #bea69e;
+}
+
+.mentors-item {
+  max-width: 185px;
+  margin: 0 auto 40px;
+}
+
+.mentors-item:last-child {
+  margin-bottom: 0;
+}
+
+.mentors-picture {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 16px;
+}
+
+.mentors-image {
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.mentors-content {
+}
+
+.mentors-subtitle {
+  text-align: center;
+  margin-bottom: 4px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  text-transform: capitalize;
+}
+
+.mentors-experience {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
+}
+
+@media screen and (min-width: 768px) {
+  .mentors {
+    margin-bottom: 100px;
+  }
+
+  .mentors-container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+
+  .mentors-members {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 93px 100px;
+  }
+
+  .mentors-item {
+    margin: 0;
+    max-width: 194px;
+  }
+
+  .mentors-title {
+    margin-bottom: 50px;
+    font-size: 48px;
+    line-height: 1.13;
+  }
+
+  .mentors-subtitle {
+    font-size: 28px;
+    line-height: 1.14;
+  }
+
+  .mentors-experience {
+    font-size: 14px;
+    line-height: 1.29;
+  }
 }
