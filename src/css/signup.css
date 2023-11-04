@@ -1,2 +1,55 @@
 .signup {
+  padding-bottom: 80px;
 }
+.container {
+  width: 375px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+/* .sign-up-form-wrap {
+} */
+.sing-up-text {
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+}
+/* .sut .sign-up-form {
+}
+.sign-up-form-wrap {
+} */
+.form-field {
+  width: 335px;
+  color: #fff;
+  font-family: DM Sans, sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  background-color: #121212;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 14px 18px;
+}
+
+.form-field::placeholder {
+  color: #fff;
+  font-family: DM Sans, sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  opacity: 0.7;
+}
+/* .submit-btn {
+}
+.privacy-text {
+}
+.privacy-text-link {
+}
+.sign-up-images {
+}
+.sign-up-item-sm {
+}
+.sing-up-sm-image {
+}
+.sign-up-item-lg {
+}
+.sing-up-lg-image {
+} */
