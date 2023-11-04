@@ -6,24 +6,27 @@
 
 .header {
     padding: 20px;
+    /* flex-grow: 0; */
     /* margin-bottom: 20px; */
     /* background: #121212; */
 }
 
 .header-nav {
-    width: 335px;
+    /* width: 335px; */
     height: 50px;
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.20);
     background: #121212;
     display: flex;
     align-items: center;
+    flex-direction: row;
 }
 
 
 .header-logo {
     margin-left: 20px;
     display: inline;
+    flex-grow: 1; /* двигает элементы вправо */
 }
 
 .header-logo-svg {
@@ -32,7 +35,14 @@
 }
 
 .header-camera {
+    width: 32px;
+    height: 32px;
     margin-left: 98px;
+    fill: #BEA69E66;
+    background-color: #1D1D1D;
+    border: 0px;
+    border-radius: 50%;
+    padding: 8px;
 }
 
 .header-camera-svg {
@@ -40,7 +50,8 @@
 }
 
 .header-menu {
-    /* margin-right: 20px; */
+    margin-right: 20px;
+
 }
 
 .header-menu-svg {
@@ -48,5 +59,15 @@
     /* margin-right: 20px; */
 }
 
+@media screen and (min-width: 375px) {
+}
 
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1280px) {
+}
+
+@media screen and (min-width: 1440px) {
+}
 
