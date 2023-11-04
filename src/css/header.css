@@ -20,12 +20,13 @@
     display: flex;
     align-items: center;
     flex-direction: row;
+    min-width: 280px;
 }
 
 
 .header-logo {
     margin-left: 20px;
-    display: inline;
+    display: flex;
     flex-grow: 1; /* двигает элементы вправо */
 }
 
@@ -37,12 +38,13 @@
 .header-camera {
     width: 32px;
     height: 32px;
-    margin-left: 98px;
+    margin-left: 20px;
     fill: #BEA69E66;
     background-color: #1D1D1D;
     border: 0px;
     border-radius: 50%;
     padding: 8px;
+    margin-right: 14px;
 }
 
 .header-camera-svg {
@@ -50,16 +52,34 @@
 }
 
 .header-menu {
+    display: flex;
     margin-right: 20px;
-
+    border: 0px;
+    background-color: #121212;
 }
 
 .header-menu-svg {
-    /* fill: #FFFFFF; */
-    /* margin-right: 20px; */
+    stroke: #FFFFFF;
+    align-items: center;
+    
 }
 
+.header-btn {
+    text-transform: uppercase;
+    border-radius: 12px;
+    background: #FFF;
+    display: inline-flex;
+    padding: 16px 58px;
+    justify-content: center;
+    align-items: center;
+}
+
+
 @media screen and (min-width: 375px) {
+    .header-camera {
+        display: none;
+    }
+
 }
 
 @media screen and (min-width: 768px) {
