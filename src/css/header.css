@@ -9,9 +9,6 @@
 
 .container-header {
     display: flex;
-    margin: 0;
-    padding: 0;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
 }
@@ -19,9 +16,9 @@
 .header-nav {
     height: 60px;
     width: 335px;
+    max-width: 335px;
     padding-left: 20px;
     padding-right: 20px;
-    max-width: 335px;
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.20);
     background: #121212;
@@ -30,6 +27,7 @@
     flex-direction: row;
     min-width: 280px;
     flex-grow: 1;
+    flex-shrink: 0;
 }
 
 .header-logo {
@@ -187,11 +185,6 @@
     .header-camera {
         display: none;
         transition: display 0.5s ease;
-    }
-
-    .container-header {
-        display: flex;
-        transition: margin 0.5s ease;
     }
 
     .header-btn {
