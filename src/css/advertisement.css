@@ -1,12 +1,12 @@
-.advertisement {
+.running-line {
   overflow: hidden;
 }
-.advertisement-wrap {
+.running-line-wrap {
   display: flex;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
-.advertisement-text {
+.running-line-text {
   font-size: 28px;
   line-height: 1.14;
   letter-spacing: -0.02em;
@@ -16,17 +16,17 @@
   padding: 20px 20px;
   min-width: 100%;
   white-space: nowrap;
-  animation-name: advertisementText;
-  animation-duration: 4s;
-  animation-timing-function: ease-in-out;
+  animation-name: runningLineText;
+  animation-duration: 15s;
+  animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
 
-.advertisement-text span {
+.running-line-text span {
   color: #bea69e;
 }
 
-@keyframes advertisementText {
+@keyframes runningLineText {
   from {
     transform: translateX(0);
   }
@@ -37,7 +37,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .advertisement-text {
+  .running-line-text {
     font-size: 40px;
     line-height: 1.25;
     padding: 24px 32px;
@@ -45,7 +45,7 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .advertisement-text {
+  .running-line-text {
     font-size: 59px;
     line-height: 1.08;
     padding: 24px 100px;
