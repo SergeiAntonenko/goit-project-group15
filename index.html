@@ -20,7 +20,7 @@
     />
     
     <script type="module" crossorigin src="/goit-project-group15/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/goit-project-group15/assets/index-b049197a.css">
+    <link rel="stylesheet" href="/goit-project-group15/assets/index-f6f658ab.css">
   </head>
   <body>
     <div class="backdrop" id="menu"> <!-- Insert is-open here  -->
@@ -58,11 +58,11 @@
                         </svg>
                     </div>
                 </a>
-                <button class="header-menu" id="show-menu">
+                <div class="header-menu" id="show-menu">
                     <svg class="header-menu-svg" width="32" height="22">
                         <use href="/goit-project-group15/assets/icons-c23a005f.svg#nav"></use>
                     </svg>
-                </button>
+                </div>
                 <ul class="header-menu-list">
                     <li class="header-menu-list-item"><a href="#about_us">About Us</a></li>
                     <li class="header-menu-list-item"><a href="#our_courses">Our courses</a></li>
@@ -71,9 +71,11 @@
                     <li class="header-menu-list-item"><a href="#contacts">contacts</a></li>
                 </ul>
             </nav>
-            <div class="header-btn">
-                <div class="header-btn-text"><a class="header-btn-link" href="#sign-up">Sign Up</a></div>
-            </div>
+            <a class="header-btn-link" href="#sign-up">
+                <div class="header-btn">
+                    <div class="header-btn-text">Sign Up</div>
+                </div>
+            </a>
 
         </div>
     </header>
