@@ -1,5 +1,3 @@
-
-
 .header-hero {
     background-image: url('../img/header/background.png');
 }
@@ -18,7 +16,6 @@
     align-items: center;
 }
 
-
 .header-nav {
     /* width: 335px; */
     height: 60px;
@@ -33,11 +30,10 @@
     margin-right: 14px;
 }
 
-
 .header-logo {
     margin-left: 20px;
     display: flex;
-    flex-grow: 1; 
+    flex-grow: 1;
     flex-shrink: 0;
 }
 
@@ -57,13 +53,14 @@
     margin-right: 14px;
 }
 
-.header-camera:hover, .header-camera:active {
-    fill:#BEA69E;
+.header-camera:hover,
+.header-camera:active {
+    fill: #BEA69E;
 }
 
 
 .header-camera-svg {
-    flex-shrink: 0; 
+    flex-shrink: 0;
 }
 
 .header-menu {
@@ -77,7 +74,7 @@
     stroke: #FFFFFF;
     align-items: center;
     flex-shrink: 0;
-    
+
 }
 
 .header-menu-list {
@@ -90,10 +87,7 @@
     transition: display 0.5s ease;
 }
 
-@media screen and (min-width: 375px) {
-  
-
-}
+@media screen and (min-width: 375px) {}
 
 
 /* =========================== MODAL MENU ============================ */
@@ -106,12 +100,13 @@
     background: rgba(18, 18, 18, 0.40);
     top: 0;
     left: 0;
+    visibility: hidden;
 }
 
-.is-open{
+.is-open {
     opacity: 1;
     visibility: visible;
-    pointer-events: auto;   
+    pointer-events: auto;
 }
 
 .modal {
@@ -125,7 +120,8 @@
     top: 0px;
     right: 0px;
     transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    background-image: url(../img/header/rectangle@1x.png);
+    background-image: image-set(url("../img/header/rectangle@1x.png") 1x,
+            url("../img/header/rectangle@2x.png") 2x);
     background-position: bottom center;
     background-repeat: no-repeat;
 }
@@ -137,13 +133,12 @@
     margin-left: auto;
     border: 0;
     background-color: transparent;
-    
+    transition: margin-right 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-btn-svg {
     stroke: #121212;
 }
-
 
 .modal-menu {
     position: absolute;
@@ -152,7 +147,7 @@
 }
 
 .modal-menu-list-item {
-    color:  #121212;
+    color: #121212;
     font-family: DM Sans;
     font-size: 14px;
     font-style: normal;
@@ -162,7 +157,8 @@
     padding-bottom: 20px;
 }
 
-.modal-menu-list-item:active, .modal-menu-list-item:hover {
+.modal-menu-list-item:active,
+.modal-menu-list-item:hover {
     font-weight: 700;
 }
 
@@ -196,19 +192,20 @@
         transition: width 0.5s ease;
     }
 
-    .header-btn:hover, .header-btn:active {
+    .header-btn:hover,
+    .header-btn:active {
         background: #1D1D1D;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    .header-btn:hover .header-btn-text, 
+    .header-btn:hover .header-btn-text,
     .header-btn:active .header-btn-text {
-            color: #BEA69E;
-            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        color: #BEA69E;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-    
+
     .header-btn-text {
-        display: flex; 
+        display: flex;
         align-items: center;
         justify-content: center;
         color: #121212;
@@ -216,7 +213,8 @@
         font-size: 18px;
         font-style: normal;
         font-weight: 700;
-        line-height: 28px; /* 155.556% */
+        line-height: 28px;
+        /* 155.556% */
         text-transform: uppercase;
         white-space: nowrap;
     }
@@ -224,8 +222,6 @@
     .header-btn-link {
         padding: 18px 58px;
     }
-
-
 
     .modal-btn {
         margin-right: 32px;
@@ -236,8 +232,8 @@
         transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
         width: 480px;
         height: 1024px;
-        background-image: url(../img/header/rectangle-large@1x.png);
-        
+        background-image: image-set(url("../img/header/rectangle-large@1x.png") 1x,
+                url("../img/header/rectangle-large@2x.png") 2x);
     }
 
     .modal-menu {
@@ -245,12 +241,10 @@
         margin-top: 232px;
         margin-left: 64px;
     }
-    
+
     .modal-menu-list-item {
         padding-bottom: 28px;
     }
-    
-
 }
 
 
@@ -263,12 +257,12 @@
         height: 60px;
         transition: width 0.5s ease;
     }
-    
+
     .header-btn-link {
         padding: 18px 85px;
         transition: width 0.5s ease;
     }
-    
+
     .header-menu {
         display: none;
         transition: display 0.5s ease;
@@ -296,15 +290,13 @@
         text-transform: uppercase;
         white-space: nowrap;
     }
-    
-    .header-menu-list-item:hover, .header-menu-list-item:active {
+
+    .header-menu-list-item:hover,
+    .header-menu-list-item:active {
         color: #BEA69E;
     }
 
-    .backdrop { 
-        display:none;
+    .backdrop {
+        display: none;
     }
-    
-
 }
-
