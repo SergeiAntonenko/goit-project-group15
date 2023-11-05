@@ -257,7 +257,7 @@
 }
 
 
-/* =========================== DESCTOP ============================ */
+/* =========================== DESCTOP 1280 ============================ */
 
 @media screen and (min-width: 1280px) {
 
@@ -266,6 +266,7 @@
     }
 
     .header-nav {
+        width: 822px;
         max-width: 822px;
         padding: 22px, 50px;
     }
@@ -310,5 +311,14 @@
 
     .backdrop {
         display: none;
+    }
+}
+
+/* =========================== DESCTOP 1440 ============================ */
+
+@media screen and (min-width: 1440px) {
+    .header-nav {
+        width: 982px;
+        max-width: 982px;
     }
 }
