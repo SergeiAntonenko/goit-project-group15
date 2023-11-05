@@ -1,2 +1,142 @@
+/*FOOTER*/
 .footer {
+    padding-top: 50px;
+    padding-bottom: 25px;
+    width: 1440px;
+    height: 331px;
+
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+.footer-container {
+    display: flex;
+    
+    
+}
+
+/*FOOTER ADDRES*/
+.container-footer-addres {
+    margin-right: 360px;
+}
+.footer-logo {
+    margin-bottom: 20px;
+}
+.footer-addres {
+ color: #FFF;
+ font-family: DM Sans;
+ font-size: 14px;
+ font-style: normal;
+ font-weight: 400;
+ line-height: 18px; /* 128.571% */
+ margin-bottom: 10px;
+    
+}
+.footer-tel {
+ 
+}
+
+.footer-live {
+    margin-bottom: 25px;
+}
+
+.footer-live-text {
+}
+
+/*FOOTER SOCIAL*/
+.container-footer-social {
+    margin-right: 100px;
+}
+
+.footer-social {  
+ color: #FFF;
+ font-family: DM Sans;
+ font-size: 14px;
+ font-style: normal;
+ font-weight: 400;
+ line-height: normal;   
+}
+
+.footer-social-media {
+    margin-bottom: 20px;
+}
+
+.footer-social-link {
+}
+
+/*FOOTER NAV*/
+.container-footer-navigation {
+    margin-right: 221px;
+}
+
+.footer-navigation-list {
+  color: #FFF;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.footer-navigation-item {
+    margin-bottom: 20px;
+}
+.footer-navigation-link {
+}
+
+/*FOOTER Search*/
+.container-footer-form {
+}
+
+
+
+.custom-form-class {
+}
+
+.custom-label-class {
+}
+
+.footer-email-class {
+}
+
+.custom-button-class {
+    width: 60px;
+    height: 60px;
+    border: none;
+    background:  #1D1D1D;
+    justify-content: center;
+    align-items: center;;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+   
+}
+.custom-text-footer {
+    color: #FFF;
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; 
+  justify-content: center;
+  align-items: center;
+}
+
+/*FOOTER Describe*/
+.footer-item {
+    display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+
+.footer-links {
+    margin-right: 935px;
 }
