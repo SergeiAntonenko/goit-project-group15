@@ -263,22 +263,19 @@
 
     .header {
         padding: 20px 100px 80px 100px;
+        transition: padding 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .header-nav {
         width: 822px;
         max-width: 822px;
-        padding: 22px, 50px;
+        padding-right: 0px;
+        transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .header-btn {
         width: 238px;
         height: 60px;
-        transition: width 0.5s ease;
-    }
-
-    .header-btn-link {
-        /* padding: 18px 85px; */
         transition: width 0.5s ease;
     }
 
@@ -292,7 +289,7 @@
     }
 
     .header-menu-list-item {
-        margin-right: 40px;
+        margin-right: 28px;
         color: #FFF;
         font-family: DM Sans;
         font-size: 14px;
@@ -320,5 +317,12 @@
     .header-nav {
         width: 982px;
         max-width: 982px;
+        padding-right: 0px;
+        transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .header-menu-list-item {
+        margin-right: 40px;
+        transition: margin-right 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
