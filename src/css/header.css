@@ -9,8 +9,9 @@
 
 .container-header {
     display: flex;
-    margin: 20px;
-    /* flex-direction: row; */
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
 }
@@ -18,6 +19,8 @@
 .header-nav {
     height: 60px;
     width: 335px;
+    padding-left: 20px;
+    padding-right: 20px;
     max-width: 335px;
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.20);
@@ -27,11 +30,9 @@
     flex-direction: row;
     min-width: 280px;
     flex-grow: 1;
-    margin-right: 14px;
 }
 
 .header-logo {
-    margin-left: 20px;
     display: flex;
     flex-grow: 1;
     flex-shrink: 0;
@@ -44,14 +45,19 @@
 .header-camera {
     width: 32px;
     height: 32px;
-    margin-left: 20px;
     fill: #BEA69E66;
     background-color: #1D1D1D;
     border: 0px;
     border-radius: 50%;
     padding: 8px;
+    margin-left: 90px;
     margin-right: 14px;
 }
+
+.header-camera-link {
+    display: block;
+}
+
 
 .header-camera:hover,
 .header-camera:active {
@@ -60,12 +66,11 @@
 }
 
 .header-camera-svg {
-    flex-shrink: 0;
+    /* flex-shrink: 0; */
 }
 
 .header-menu {
     display: flex;
-    margin-right: 20px;
     border: 0px;
     background-color: #121212;
 }
@@ -74,7 +79,6 @@
     stroke: #FFFFFF;
     align-items: center;
     flex-shrink: 0;
-
 }
 
 .header-menu-list {
@@ -168,6 +172,11 @@
 
 @media screen and (min-width: 768px) {
 
+
+    .header {
+        padding: 20px 32px 40px 32px;
+    }
+
     .header-nav {
         width: 504;
         max-width: 504px;
@@ -182,7 +191,6 @@
 
     .container-header {
         display: flex;
-        margin: 20px 32px 40px 32px;
         transition: margin 0.5s ease;
     }
 
@@ -227,7 +235,8 @@
     }
 
     .header-btn-link {
-        padding: 18px 58px;
+        display: block;
+        padding: 186px, 60px;
     }
 
     .modal-btn {
@@ -259,6 +268,10 @@
 
 @media screen and (min-width: 1280px) {
 
+    .header {
+        padding: 20px 100px 80px 100px;
+    }
+
     .header-nav {
         max-width: 822px;
         padding: 22px, 50px;
@@ -271,18 +284,13 @@
     }
 
     .header-btn-link {
-        padding: 18px 85px;
+        /* padding: 18px 85px; */
         transition: width 0.5s ease;
     }
 
     .header-menu {
         display: none;
         transition: display 0.5s ease;
-    }
-
-    .container-header {
-        margin: 20px, 100px, 80px, 100px;
-        transition: margin 0.5s ease;
     }
 
     .header-menu-list {
