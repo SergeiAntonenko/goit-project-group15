@@ -11,9 +11,17 @@
     /* background: #121212; */
 }
 
+.container-header {
+    display: flex;
+    margin: 20px;
+    flex-direction: row;
+    align-items: center;
+}
+
+
 .header-nav {
     /* width: 335px; */
-    height: 50px;
+    height: 60px;
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.20);
     background: #121212;
@@ -21,18 +29,20 @@
     align-items: center;
     flex-direction: row;
     min-width: 280px;
+    flex-grow: 1;
+    margin-right: 14px;
 }
 
 
 .header-logo {
     margin-left: 20px;
     display: flex;
-    flex-grow: 1; /* двигает элементы вправо */
+    flex-grow: 1; 
+    flex-shrink: 0;
 }
 
 .header-logo-svg {
     fill: #FFFFFF;
-
 }
 
 .header-camera {
@@ -47,8 +57,13 @@
     margin-right: 14px;
 }
 
+.header-camera:hover, .header-camera:active {
+    fill:#BEA69E;
+}
+
+
 .header-camera-svg {
-    
+    flex-shrink: 0; 
 }
 
 .header-menu {
@@ -65,31 +80,113 @@
     
 }
 
+.header-menu-list {
+    display: none;
+}
+
 .header-btn {
-    text-transform: uppercase;
-    border-radius: 12px;
-    background: #FFF;
-    display: inline-flex;
-    padding: 16px 58px;
-    justify-content: center;
-    align-items: center;
+    display: none;
+}
+
+@media screen and (min-width: 375px) {
+  
+
 }
 
 
-@media screen and (min-width: 375px) {
+
+/* =========================== TABLET ============================ */
+
+@media screen and (min-width: 768px) {
+
     .header-camera {
         display: none;
     }
 
+    .container-header {
+        display: flex;
+        margin: 20px 32px 40px 32px;
+    }
+
+    .header-btn {
+        width: 186px;
+        height: 60px;
+        text-transform: uppercase;
+        border-radius: 12px;
+        background: #FFF;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        /* margin-left: 20px; */
+    }
+
+    .header-btn:hover, .header-btn:active {
+        background: #1D1D1D;
+        border: none;
+    }
+
+    .header-btn:hover .header-btn-text, 
+    .header-btn:active .header-btn-text {
+            color: #BEA69E;
+    }
+    
+    .header-btn-text {
+        color: #121212;
+        font-family: DM Sans;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 28px; /* 155.556% */
+        text-transform: uppercase;
+        border: none;
+        white-space: nowrap;
+    }
+
+    .header-btn-text {
+        /* color: #BEA69E; */
+    }
+
 }
 
-@media screen and (min-width: 768px) {
-/* dsfssssssssdsssssf */
-}
+
+/* =========================== DESCTOP ============================ */
 
 @media screen and (min-width: 1280px) {
-}
+    .header-btn {
+        width: 238px;
+        height: 60px;
+    }
 
-@media screen and (min-width: 1440px) {
+    .header-menu {
+        display: none;
+    }
+
+    .container-header {
+        margin: 20px 100px 80px 100px;
+    }
+
+    .header-menu-list {
+        display: flex;
+        margin-right: 50px;
+    }
+
+    .header-menu-list-item {
+        margin-right: 40px;
+        color: #FFF;
+        font-family: DM Sans;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+        white-space: nowrap;
+    }
+    
+    .header-menu-list-item:hover, .header-menu-list-item:active {
+        color: #BEA69E;
+    }
+
+    
+
 }
 
