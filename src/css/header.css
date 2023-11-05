@@ -1,20 +1,24 @@
 .header-hero {
-    background-image: url('../img/header/background.png');
+    background-image: url('./img/header/background.png');
 }
 
 .header {
     padding: 20px;
+    align-items: center;
 }
 
 .container-header {
     display: flex;
     margin: 20px;
-    flex-direction: row;
+    /* flex-direction: row; */
     align-items: center;
+    justify-content: center;
 }
 
 .header-nav {
     height: 60px;
+    width: 335px;
+    max-width: 335px;
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.20);
     background: #121212;
@@ -90,7 +94,7 @@
 
 .backdrop {
     z-index: 1;
-    position: fixed;
+    position: absolute;
     width: 100%;
     height: 100%;
     background: rgba(18, 18, 18, 0.40);
@@ -106,18 +110,19 @@
 }
 
 .modal {
+    z-index: 20;
     display: flex;
     width: 218px;
     height: 812px;
     flex-shrink: 0;
     min-height: 812px;
     background: #BEA69E;
-    position: absolute;
+    position:absolute;
     top: 0px;
     right: 0px;
     transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    background-image: image-set(url("../img/header/rectangle@1x.png") 1x,
-            url("../img/header/rectangle@2x.png") 2x);
+    background-image: image-set(url("./img/header/rectangle@1x.png") 1x,
+            url("./img/header/rectangle@2x.png") 2x);
     background-position: bottom center;
     background-repeat: no-repeat;
 }
@@ -162,6 +167,12 @@
 /* =========================== TABLET ============================ */
 
 @media screen and (min-width: 768px) {
+
+    .header-nav {
+        width: 504;
+        max-width: 504px;
+        min-width: 504px;
+    }
 
     .header-camera {
         display: none;
@@ -227,8 +238,8 @@
         transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
         width: 480px;
         height: 1024px;
-        background-image: image-set(url("../img/header/rectangle-large@1x.png") 1x,
-                url("../img/header/rectangle-large@2x.png") 2x);
+        background-image: image-set(url("./img/header/rectangle-large@1x.png") 1x,
+                url("./img/header/rectangle-large@2x.png") 2x);
     }
 
     .modal-menu {
@@ -246,6 +257,11 @@
 /* =========================== DESCTOP ============================ */
 
 @media screen and (min-width: 1280px) {
+
+    .header-nav {
+        width: 822;
+        max-width: 822px;
+    }
 
     .header-btn {
         width: 238px;
@@ -271,7 +287,7 @@
     .header-menu-list {
         display: flex;
         margin-right: 50px;
-        margin-left: 40px;
+        margin-left: 97px;
     }
 
     .header-menu-list-item {
@@ -289,6 +305,7 @@
     .header-menu-list-item:hover,
     .header-menu-list-item:active {
         color: #BEA69E;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .backdrop {
