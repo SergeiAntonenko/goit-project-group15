@@ -82,10 +82,12 @@
 
 .header-menu-list {
     display: none;
+    transition: display 0.5s ease;
 }
 
 .header-btn {
     display: none;
+    transition: display 0.5s ease;
 }
 
 @media screen and (min-width: 375px) {
@@ -101,11 +103,13 @@
 
     .header-camera {
         display: none;
+        transition: display 0.5s ease;
     }
 
     .container-header {
         display: flex;
         margin: 20px 32px 40px 32px;
+        transition: margin 0.5s ease;
     }
 
     .header-btn {
@@ -119,6 +123,7 @@
         padding: 0;
         border-radius: 12px;
         background: #FFF;
+        transition: width 0.5s ease;
     }
 
     .header-btn:hover, .header-btn:active {
@@ -156,21 +161,26 @@
 /* =========================== DESCTOP ============================ */
 
 @media screen and (min-width: 1280px) {
+
     .header-btn {
         width: 238px;
         height: 60px;
+        transition: width 0.5s ease;
     }
     
     .header-btn-link {
         padding: 18px 85px;
+        transition: width 0.5s ease;
     }
     
     .header-menu {
         display: none;
+        transition: display 0.5s ease;
     }
 
     .container-header {
         margin: 20px 100px 80px 100px;
+        transition: margin 0.5s ease;
     }
 
     .header-menu-list {
