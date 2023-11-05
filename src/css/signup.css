@@ -27,6 +27,7 @@
   margin-bottom: 8px;
   resize: none;
   outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .error-field {
@@ -47,7 +48,8 @@
   display: block;
 }
 
-.form-field:focus {
+.form-field:focus,
+.form-field:hover {
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
@@ -76,6 +78,7 @@
   line-height: 1.25;
   text-transform: uppercase;
   margin-bottom: 20px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .submit-btn:hover,
