@@ -20,10 +20,29 @@
     />
     
     <script type="module" crossorigin src="/goit-project-group15/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/goit-project-group15/assets/index-69bac4ee.css">
+    <link rel="stylesheet" href="/goit-project-group15/assets/index-009502f6.css">
   </head>
   <body>
-    <div class="header-hero">
+    <div class="backdrop"> <!-- Insert is-open here  -->
+    <div class="modal">
+        <button class="modal-btn">
+            <svg class="modal-btn-svg" width="32" height="32">
+                <use href="../img/icons.svg#close"></use>
+            </svg>
+        </button>
+        <div class="modal-menu">
+            <ul class="modal-menu-list">
+                <li class="modal-menu-list-item"><a href="">About Us</a></li>
+                <li class="modal-menu-list-item"><a href="">Our courses</a></li>
+                <li class="modal-menu-list-item"><a href="">Our mentors</a></li>
+                <li class="modal-menu-list-item"><a href="">Reviews</a></li>
+                <li class="modal-menu-list-item"><a href="">contacts</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="header-hero">
     <header class="header">
         <div class="container-header">
             <nav class="header-nav">
@@ -50,43 +69,16 @@
                     <li class="header-menu-list-item"><a href="">contacts</a></li>
                 </ul>
             </nav>
-            <!-- <button type="submit" class="header-btn"><a href="#sign-up">Sign Up</a></button> -->
             <button class="header-btn">
                 <div class="header-btn-text"><a class="header-btn-link" href="#sign-up">Sign Up</a></div>
             </button>
 
-        </div>    
+        </div>
     </header>
 
-
-    <!-- hero -->
+    <!-- insert hero here -->
 
 </div>
-
-<!-- close крестик -->
-
-
-<div class="backdrop is-open">
-    <div class="modal">
-        <button class="modal-btn">
-            <svg class="modal-btn-svg" width="32" height="32">
-                <use href="../img/icons.svg#close"></use>
-            </svg>
-        </button>
-        <div class="modal-menu">
-            <ul class="modal-menu-list">
-                <li class="modal-menu-list-item"><a href="">About Us</a></li>
-                <li class="modal-menu-list-item"><a href="">Our courses</a></li>
-                <li class="modal-menu-list-item"><a href="">Our mentors</a></li>
-                <li class="modal-menu-list-item"><a href="">Reviews</a></li>
-                <li class="modal-menu-list-item"><a href="">contacts</a></li>
-            </ul>
-        </div>
-    </div>
-</div>
-
-
-
     <main>
       <section class="hero"></section>
 
