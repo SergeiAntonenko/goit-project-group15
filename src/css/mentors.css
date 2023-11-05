@@ -15,15 +15,10 @@
   margin-bottom: 0;
 }
 
-.mentors-picture {
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 16px;
-}
-
 .mentors-image {
   margin: 0 auto;
   border-radius: 50%;
+  margin-bottom: 16px;
 }
 
 .mentors-subtitle {
