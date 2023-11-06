@@ -161,6 +161,10 @@
     padding-bottom: 20px;
 }
 
+.modal-menu-list-item:last-child {
+    padding-bottom: 0;
+}
+
 .modal-menu-list-item:active,
 .modal-menu-list-item:hover {
     font-weight: 700;
