@@ -75,6 +75,7 @@ ol li::before {
 .courses-link:hover .courses-icon,
 .courses-link:focus .courses-icon {
     fill: #ffffff;
+    stroke: #ffffff;
 }
 
 .courses-icon {
