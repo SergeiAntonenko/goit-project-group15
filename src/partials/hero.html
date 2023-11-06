@@ -1,1 +1,88 @@
-<section class="hero"></section>
+<section class="hero">
+  <div class="container-hero container">
+    <div class="hero-cover">
+      <div class="hero-content">
+        <h1 class="hero-title section-title">Discover the magic of <span>photography</span> in our school</h1>
+        <p class="hero-description">Our photography school offers an unforgettable journey, where you can learn the basics of composition, master technical skills, translate your unique ideas.</p>
+        <div class="hero-box">
+          <div class="hero-students">
+            <ul class="hero-students-list">
+              <li class="hero-student-item">
+                <img 
+                  class="hero-student-img" 
+                  srcset="./img/hero/student-1.png 1x, ./img/hero/student-1@2x.png 2x"
+                  src="./img/hero/student-1.png"
+                  alt="student"
+                  width="44"
+                  height="44"
+                /> 
+              </li>
+              <li class="hero-student-item">
+                <img 
+                  class="hero-student-img" 
+                  srcset="./img/hero/student-2.png 1x, ./img/hero/student-2@2x.png 2x"
+                  src="./img/hero/student-2.png"
+                  alt="student"
+                  width="44"
+                  height="44"
+                /> 
+              </li>
+              <li class="hero-student-item">
+                <img 
+                  class="hero-student-img" 
+                  srcset="./img/hero/student-3.png 1x, ./img/hero/student-3@2x.png 2x"
+                  src="./img/hero/student-3.png"
+                  alt="student"
+                  width="44"
+                  height="44"
+                /> 
+              </li>
+            </ul>
+            <a class="hero-link" href="#reviews">
+              <span>Our happy students</span>
+              <svg class="hero-arrow" width="32" height="32">
+                <use href="./img/icons.svg#arrow"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="hero-rating-box">
+            <div class="hero-star-box">
+              <svg class="hero-star" width="20" height="20">
+                <use href="./img/icons.svg#star"></use>
+              </svg>
+            </div>
+            <div class="hero-rating-cotent">
+              <div class="hero-reviews-label">reviews</div>
+              <div class="hero-reviews-number">+1500</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <picture class="hero-picture">
+        <source
+          srcset="./img/hero/man-large.png 1x, ./img/hero/man-large@2x.png 2x"
+          media="(min-width: 1440px)"
+        />
+        <source
+          srcset="./img/hero/man-dt.png 1x, ./img/hero/man-dt@2x.png 2x"
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="./img/hero/man-tab.png 1x, ./img/hero/man-tab@2x.png 2x"
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="./img/hero/man-mob.png 1x, ./img/hero/man-mob@2x.png 2x"
+          media="(max-width: 767px)"
+        />
+        <img
+          class="hero-img"
+          src="./img/hero/man-mob.png"
+          alt="man with camera"
+        />
+      </picture>
+    </div>
+  </div>
+</section>
+

@@ -1,5 +1,4 @@
 .reviews {
-  padding-top: 80px;
   padding-bottom: 80px;
 }
 .reviews-svg {
@@ -21,14 +20,8 @@
 .student {
   display: flex;
   gap: 10px;
-  margin-bottom: 10px;
 }
 .reviews-title {
-  color: #fff;
-  font-size: 28px;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: -0.04em;
   margin-bottom: 40px;
 }
 .student-title {
@@ -41,21 +34,15 @@
   color: #fff;
   font-size: 14px;
   font-weight: 400;
-  line-height: 1.28;
+  line-height: 1.29;
   letter-spacing: -0.02em;
-  width: 295px;
-}
-.reviews-container {
-  max-width: 375px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  max-width: 295px;
 }
 .left-container {
   padding: 20px;
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.2);
-  width: 335px;
+  max-width: 335px;
   flex-shrink: 0;
 }
 .student-text {
@@ -69,8 +56,124 @@
   display: flex;
   flex-direction: column;
   gap: 4px;
+  width: 145px;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 .svg-container {
   margin-left: 66px;
   margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 4px;
+}
+.student-svg-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+@media only screen and (min-width: 768px) {
+  .reviews {
+    padding-bottom: 100px;
+  }
+  .revievs-student {
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+
+  .left-container {
+    max-width: 640px;
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+  .reviews-svg {
+    width: 20px;
+    height: 20px;
+  }
+  .reviews-svg:last-child {
+    width: 20px;
+    height: 20px;
+  }
+  .reviews-text {
+    font-size: 16px;
+    line-height: 1.25;
+    max-width: 600px;
+  }
+  .student-text {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    line-height: 1.29;
+  }
+  .student-title {
+    line-height: 1.4;
+  }
+  .svg-container {
+    margin-left: 66px;
+    margin-bottom: 20px;
+  }
+  .svg-container {
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+  .student {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 0;
+  }
+  .svg-container {
+    margin-left: 0;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .student-svg-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .reviews-title {
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .reviews {
+    padding-bottom: 150px;
+  }
+  .left-container {
+    max-width: 530px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 20px;
+  }
+  .reviews-text {
+    max-width: 490px;
+  }
+  .student-text {
+    line-height: 1.29;
+  }
+  .reviews-title {
+    letter-spacing: -0.02em;
+  }
+  .right-container {
+    display: block;
+  }
+  .both-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .amanda-student {
+    width: 218px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .left-container {
+    max-width: 610px;
+  }
+  .reviews-text {
+    max-width: 570px;
+  }
 }

@@ -1,24 +1,9 @@
 .mentors {
-  margin-bottom: 80px;
-}
-
-.mentors-container {
-  max-width: 335px;
-  margin: 0 auto;
-  padding: 0 20px;
+  padding-bottom: 80px;
 }
 
 .mentors-title {
   margin-bottom: 40px;
-  text-transform: capitalize;
-  font-size: 28px;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: -0.04em;
-}
-
-.mentors-accent {
-  color: #bea69e;
 }
 
 .mentors-item {
@@ -30,18 +15,10 @@
   margin-bottom: 0;
 }
 
-.mentors-picture {
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 16px;
-}
-
 .mentors-image {
   margin: 0 auto;
   border-radius: 50%;
-}
-
-.mentors-content {
+  margin-bottom: 16px;
 }
 
 .mentors-subtitle {
@@ -64,12 +41,7 @@
 
 @media screen and (min-width: 768px) {
   .mentors {
-    margin-bottom: 100px;
-  }
-
-  .mentors-container {
-    max-width: 768px;
-    padding: 0 32px;
+    padding-bottom: 100px;
   }
 
   .mentors-members {
@@ -87,8 +59,6 @@
 
   .mentors-title {
     margin-bottom: 50px;
-    font-size: 48px;
-    line-height: 1.13;
   }
 
   .mentors-subtitle {
@@ -99,5 +69,15 @@
   .mentors-experience {
     font-size: 14px;
     line-height: 1.29;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .mentors {
+    padding-bottom: 150px;
+  }
+
+  .mentors-members {
+    gap: 100px;
   }
 }

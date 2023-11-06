@@ -1,29 +1,295 @@
 .header {
-    background: #121212;
+    padding-top: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
-.header-container {
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.20);
-}
-
-.header-logo {
-    margin-left: 20px;
-    display: inline;
+.container-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .header-nav {
-    height: 50px;
-    display: flex; 
-    align-items: center;   
-    justify-content: center;
+    padding: 9px 20px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    background: #121212;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-grow: 1;
 }
 
-.header-camera-btn {
-    margin-right: 20px;
-    margin-left: 98px;
+.header-logo {
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 0;
 }
 
-.header-menu-btn {
+.header-logo-svg {
+    fill: #FFFFFF;
+}
+
+.header-camera {
+    width: 32px;
+    height: 32px;
+    fill: #BEA69E66;
+    background-color: #1D1D1D;
+    border: 0px;
+    border-radius: 50%;
+    padding: 8px;
+    margin-right: 14px;
+}
+
+.header-camera:hover,
+.header-camera:active {
+    fill: #BEA69E;
+    transition: fill 0.5s ease;
+}
+
+.header-camera-link {
+    display: block;
+}
+
+.header-menu {
+    display: flex;
+    border: 0px;
+    background-color: #121212;
+}
+
+.header-menu-svg {
+    stroke: #FFFFFF;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.header-menu-list {
+    display: none;
+    transition: display 0.5s ease;
+}
+
+.header-btn {
+    display: none;
+    transition: display 0.5s ease;
+}
+
+/* =========================== MODAL MENU ============================ */
+
+.backdrop {
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(18, 18, 18, 0.40);
+    top: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.modal {
+    z-index: 20;
+    display: flex;
+    width: 218px;
+    height: 100vh;
+    flex-shrink: 0;
+    background: #BEA69E;
+    position:absolute;
+    top: 0px;
+    right: 0px;
+    transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-image: image-set(url("../img/header/rectangle@1x.png") 1x,
+            url("../img/header/rectangle@2x.png") 2x);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+}
+
+.modal-btn {
+    height: 32px;
+    width: 32px;
+    padding: 0;
+    display: flex;
+    margin-top: 20px;
     margin-right: 20px;
+    margin-left: auto;
+    border: 0;
+    background-color: transparent;
+    transition: margin-right 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-btn-svg {
+    stroke: #121212;
+}
+
+.modal-menu {
+    position: absolute;
+    margin-top: 180px;
+    margin-left: 20px;
+}
+
+.modal-menu-list-item {
+    color: #121212;
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+.modal-menu-list-item:last-child {
+    padding-bottom: 0;
+}
+
+.modal-menu-list-item:active,
+.modal-menu-list-item:hover {
+    font-weight: 700;
+}
+
+
+/* =========================== TABLET ============================ */
+
+@media screen and (min-width: 768px) {
+    .header-nav {
+        height: 60px;
+        margin-right: 20px;
+    }
+
+    .header-camera {
+        display: none;
+        transition: display 0.5s ease;
+    }
+
+    .header-btn {
+        width: 186px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        border: none;
+        padding: 0;
+        border-radius: 12px;
+        background: #FFF;
+        transition: width 0.5s ease;
+    }
+
+    .header-btn:hover,
+    .header-btn:active {
+        background: #1D1D1D;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .header-btn:hover .header-btn-text,
+    .header-btn:active .header-btn-text {
+        color: #BEA69E;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .header-btn-text {
+        color: #121212;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1.55em;
+        text-transform: uppercase;
+        white-space: nowrap;
+    }
+
+    .modal-btn {
+        transition: margin-right 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .modal {
+        transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        width: 480px;
+        background-image: image-set(url("../img/header/rectangle-large@1x.png") 1x,
+                url("../img/header/rectangle-large@2x.png") 2x);
+    }
+
+    .modal-menu {
+        position: absolute;
+        margin-top: 232px;
+        margin-left: 64px;
+    }
+
+    .modal-menu-list-item {
+        padding-bottom: 28px;
+    }
+}
+
+/* =========================== DESKTOP ============================ */
+
+@media screen and (min-width: 1280px) {
+    .backdrop {
+        display: none;
+    }
+    .header {
+        transition: padding 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .header-nav {
+        width: 822px;
+        max-width: 822px;
+        padding-right: 0px;
+        transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .header-btn {
+        width: 238px;
+        height: 60px;
+        transition: width 0.5s ease;
+    }
+
+    .header-menu {
+        display: none;
+        transition: display 0.5s ease;
+    }
+
+    .header-menu-list {
+        display: flex;
+    }
+
+    .header-menu-list-item {
+        margin-right: 28px;
+        color: #FFF;
+        font-family: DM Sans;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+        white-space: nowrap;
+    }
+
+    .header-menu-list-item:hover,
+    .header-menu-list-item:active {
+        color: #BEA69E;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .backdrop {
+        display: none;
+    }
+
+    @media screen and (min-width: 1440px) {
+        .header-nav {
+            width: 982px;
+            max-width: 982px;
+            padding-right: 0px;
+            transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    
+        .header-menu-list-item {
+            margin-right: 40px;
+            transition: margin-right 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    }
 }
