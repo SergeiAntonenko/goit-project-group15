@@ -4,6 +4,8 @@ body {
   line-height: 1.25;
   color: #fff;
   background-color: #121212;
+  scroll-behavior: smooth;
+  position: relative;
 }
 
 .container {
