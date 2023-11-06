@@ -5,6 +5,7 @@ body {
   color: #fff;
   background-color: #121212;
   scroll-behavior: smooth;
+  position: relative;
 }
 
 .container {

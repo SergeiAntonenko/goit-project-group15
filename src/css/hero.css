@@ -1,5 +1,9 @@
 .hero {
     padding-bottom: 80px;
+    background-image: url('/img/hero/background-mob.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 90px;
 }
 .container-hero {
 }
@@ -120,6 +124,8 @@
 @media screen and (min-width: 768px) {
     .hero {
         padding-bottom: 100px;
+        padding-top: 120px;
+        background-image: url('/img/hero/background-tab.png');
     }
 
     .hero-cover {
@@ -170,6 +176,8 @@
 @media screen and (min-width: 1280px) {
     .hero {
         padding-bottom: 150px;
+        padding-top: 160px;
+        background-image: url('/img/hero/background-desk.png');
     }
 
     .hero-cover {
@@ -198,5 +206,11 @@
     }
     .hero-img {
         max-width: 397px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .hero {
+        background-image: url('/img/hero/background-large.png');
     }
 }
