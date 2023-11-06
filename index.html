@@ -20,7 +20,7 @@
     />
     
     <script type="module" crossorigin src="/goit-project-group15/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/goit-project-group15/assets/index-0a529674.css">
+    <link rel="stylesheet" href="/goit-project-group15/assets/index-d2cd6960.css">
   </head>
   <body>
     <div class="backdrop" id="menu"> <!-- Insert is-open here  -->
@@ -42,107 +42,129 @@
     </div>
 </div>
 
-<div class="header-hero">
-    <header class="header">
-        <div class="container-header">
-            <nav class="header-nav">
-                <div class="header-logo">
-                    <svg class="header-logo-svg" width="127" height="20">
-                        <use href="/goit-project-group15/assets/icons-c23a005f.svg#logo"></use>
+<header class="header">
+    <div class="container-header container">
+        <nav class="header-nav">
+            <div class="header-logo">
+                <svg class="header-logo-svg" width="127" height="20">
+                    <use href="/goit-project-group15/assets/icons-c23a005f.svg#logo"></use>
+                </svg>
+            </div>
+            <a class="header-camera-link" href="#sign-up">
+                <div class="header-camera">
+                    <svg class="header-camera-svg" width="16" height="16">
+                        <use href="/goit-project-group15/assets/icons-c23a005f.svg#camera"></use>
                     </svg>
-                </div>
-                <a class="header-camera-link" href="#sign-up">
-                    <div class="header-camera">
-                        <svg class="header-camera-svg" width="16" height="16">
-                            <use href="/goit-project-group15/assets/icons-c23a005f.svg#camera"></use>
-                        </svg>
-                    </div>
-                </a>
-                <div class="header-menu" id="show-menu">
-                    <svg class="header-menu-svg" width="32" height="22">
-                        <use href="/goit-project-group15/assets/icons-c23a005f.svg#nav"></use>
-                    </svg>
-                </div>
-                <ul class="header-menu-list">
-                    <li class="header-menu-list-item"><a href="#about_us">About Us</a></li>
-                    <li class="header-menu-list-item"><a href="#our_courses">Our courses</a></li>
-                    <li class="header-menu-list-item"><a href="#our_mentors">Our mentors</a></li>
-                    <li class="header-menu-list-item"><a href="#reviews">Reviews</a></li>
-                    <li class="header-menu-list-item"><a href="#contacts">contacts</a></li>
-                </ul>
-            </nav>
-            <a class="header-btn-link" href="#sign-up">
-                <div class="header-btn">
-                    <div class="header-btn-text">Sign Up</div>
                 </div>
             </a>
-
-        </div>
-    </header>
-
-    <!-- insert hero here -->
-
-</div>
+            <div class="header-menu" id="show-menu">
+                <svg class="header-menu-svg" width="32" height="22">
+                    <use href="/goit-project-group15/assets/icons-c23a005f.svg#nav"></use>
+                </svg>
+            </div>
+            <ul class="header-menu-list">
+                <li class="header-menu-list-item"><a href="#about_us">About Us</a></li>
+                <li class="header-menu-list-item"><a href="#our_courses">Our courses</a></li>
+                <li class="header-menu-list-item"><a href="#our_mentors">Our mentors</a></li>
+                <li class="header-menu-list-item"><a href="#reviews">Reviews</a></li>
+                <li class="header-menu-list-item"><a href="#contacts">contacts</a></li>
+            </ul>
+        </nav>
+        <a class="header-btn-link" href="#sign-up">
+            <div class="header-btn">
+                <div class="header-btn-text">Sign Up</div>
+            </div>
+        </a>
+    </div>
+</header>
     <main>
-      
-/* mobile  */
- <section class="hero">
-    <div class="container-hero">
-      <h1 class="hero-title">
-        Discover the magic of <span class="hero-title2">photography</span> in our school
-      </h1>
+      <section class="hero">
+  <div class="container-hero container">
+    <div class="hero-cover">
+      <div class="hero-content">
+        <h1 class="hero-title section-title">Discover the magic of <span>photography</span> in our school</h1>
+        <p class="hero-description">Our photography school offers an unforgettable journey, where you can learn the basics of composition, master technical skills, translate your unique ideas.</p>
+        <div class="hero-box">
+          <div class="hero-students">
+            <ul class="hero-students-list">
+              <li class="hero-student-item">
+                <img 
+                  class="hero-student-img" 
+                  srcset="./img/hero/student-1.png 1x, ./img/hero/student-1@2x.png 2x"
+                  src="./img/hero/student-1.png"
+                  alt="student"
+                  weight="44"
+                  height="44"
+                /> 
+              </li>
+              <li class="hero-student-item">
+                <img 
+                  class="hero-student-img" 
+                  srcset="./img/hero/student-2.png 1x, ./img/hero/student-2@2x.png 2x"
+                  src="./img/hero/student-2.png"
+                  alt="student"
+                  weight="44"
+                  height="44"
+                /> 
+              </li>
+              <li class="hero-student-item">
+                <img 
+                  class="hero-student-img" 
+                  srcset="./img/hero/student-3.png 1x, ./img/hero/student-3@2x.png 2x"
+                  src="./img/hero/student-3.png"
+                  alt="student"
+                  weight="44"
+                  height="44"
+                /> 
+              </li>
+            </ul>
+            <a class="hero-link" href="#reviews">
+              <span>Our happy students</span>
+              <svg class="hero-arrow" width="32" height="32">
+                <use href="/goit-project-group15/assets/icons-c23a005f.svg#arrow"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="hero-rating-box">
+            <div class="hero-star-box">
+              <svg class="hero-star" width="20" height="20">
+                <use href="/goit-project-group15/assets/icons-c23a005f.svg#star"></use>
+              </svg>
+            </div>
+            <div class="hero-rating-cotent">
+              <div class="hero-reviews-label">reviews</div>
+              <div class="hero-reviews-number">+1500</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <picture class="hero-picture">
+        <source
+          srcset="./img/hero/man-large.png 1x, ./img/hero/man-large@2x.png 2x"
+          media="(min-width: 1440px)"
+        />
+        <source
+          srcset="./img/hero/man-desk.png 1x, ./img/hero/man-desk@2x.png 2x"
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="./img/hero/man-tab.png 1x, ./img/hero/man-tab@2x.png 2x"
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="./img/hero/man-mob.png 1x, ./img/hero/man-mob@2x.png 2x"
+          media="(max-width: 767px)"
+        />
+        <img
+          class="hero-img"
+          src="./img/hero/man-mob.png"
+          alt="man with camera"
+        />
+      </picture>
     </div>
-
-    <div class="container-hero">
-      <p class="hero-text">
-        Our photography school offers an unforgettable journey, where you can learn the basics of composition, master technical skills, translate your unique ideas.
-      </p>
-    </div>
-
-    <div class="hero-samples">
-      <img
-      class="samples-img-team"
-      src="./src/img/hero/hero-images.png"
-      alt="Our happy students"
-      width="109"
-      />
-
-      <img
-      class="samples-img-team2"
-      src="./src/img/hero/circle-star-44x44.svg"
-      alt="Our happy students"
-      width="109"
-      />
-      <p class="hero-text-semitransp">
-        Reviews
-      </p>
-      <p class="hero-text-semibold">
-        +1500
-      </p>
-
-      [row]
-      <p class="hero-text">
-        Our happy <br> students
-      </p>
-      <img
-      class="samples-img-team"
-      src="./src/img/hero/arrow-2-stroke-18x9.svg"
-      alt=""
-      width="18"
-      vertical-align: baseline;
-      />
-      [/row]
-    </div>
-
-    <div class="hero-photo">
-      <img
-      class="samples-img-team"
-      src="./src/img/hero/rectangle-5.png"
-      alt=""
-      width="259"
-      />
-    </div>
-  </section>
+  </div>
+</section>
 
 
       <section class="running-line">
