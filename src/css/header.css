@@ -1,5 +1,5 @@
 .header-hero {
-    background-image: url('./img/header/background.png');
+    background-image: url('../img/header/background.png');
 }
 
 .header {
@@ -9,8 +9,6 @@
 
 .container-header {
     display: flex;
-    margin: 20px;
-    /* flex-direction: row; */
     align-items: center;
     justify-content: center;
 }
@@ -19,6 +17,8 @@
     height: 60px;
     width: 335px;
     max-width: 335px;
+    padding-left: 20px;
+    padding-right: 20px;
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.20);
     background: #121212;
@@ -27,11 +27,10 @@
     flex-direction: row;
     min-width: 280px;
     flex-grow: 1;
-    margin-right: 14px;
+    flex-shrink: 0;
 }
 
 .header-logo {
-    margin-left: 20px;
     display: flex;
     flex-grow: 1;
     flex-shrink: 0;
@@ -44,28 +43,32 @@
 .header-camera {
     width: 32px;
     height: 32px;
-    margin-left: 20px;
     fill: #BEA69E66;
     background-color: #1D1D1D;
     border: 0px;
     border-radius: 50%;
     padding: 8px;
+    margin-left: 90px;
     margin-right: 14px;
 }
+
+.header-camera-link {
+    display: block;
+}
+
 
 .header-camera:hover,
 .header-camera:active {
     fill: #BEA69E;
+    transition: fill 0.5s ease;
 }
 
-
 .header-camera-svg {
-    flex-shrink: 0;
+    /* flex-shrink: 0; */
 }
 
 .header-menu {
     display: flex;
-    margin-right: 20px;
     border: 0px;
     background-color: #121212;
 }
@@ -74,7 +77,6 @@
     stroke: #FFFFFF;
     align-items: center;
     flex-shrink: 0;
-
 }
 
 .header-menu-list {
@@ -121,8 +123,8 @@
     top: 0px;
     right: 0px;
     transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    background-image: image-set(url("./img/header/rectangle@1x.png") 1x,
-            url("./img/header/rectangle@2x.png") 2x);
+    background-image: image-set(url("../img/header/rectangle@1x.png") 1x,
+            url("../img/header/rectangle@2x.png") 2x);
     background-position: bottom center;
     background-repeat: no-repeat;
 }
@@ -168,21 +170,21 @@
 
 @media screen and (min-width: 768px) {
 
+
+    .header {
+        padding: 20px 32px 40px 32px;
+    }
+
     .header-nav {
         width: 504;
         max-width: 504px;
         min-width: 504px;
+        margin-right: 20px;
     }
 
     .header-camera {
         display: none;
         transition: display 0.5s ease;
-    }
-
-    .container-header {
-        display: flex;
-        margin: 20px 32px 40px 32px;
-        transition: margin 0.5s ease;
     }
 
     .header-btn {
@@ -226,7 +228,8 @@
     }
 
     .header-btn-link {
-        padding: 18px 58px;
+        display: block;
+        padding: 186px, 60px;
     }
 
     .modal-btn {
@@ -238,8 +241,8 @@
         transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
         width: 480px;
         height: 1024px;
-        background-image: image-set(url("./img/header/rectangle-large@1x.png") 1x,
-                url("./img/header/rectangle-large@2x.png") 2x);
+        background-image: image-set(url("../img/header/rectangle-large@1x.png") 1x,
+                url("../img/header/rectangle-large@2x.png") 2x);
     }
 
     .modal-menu {
@@ -254,13 +257,20 @@
 }
 
 
-/* =========================== DESCTOP ============================ */
+/* =========================== DESCTOP 1280 ============================ */
 
 @media screen and (min-width: 1280px) {
 
+    .header {
+        padding: 20px 100px 80px 100px;
+        transition: padding 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
     .header-nav {
-        width: 822;
+        width: 822px;
         max-width: 822px;
+        padding-right: 0px;
+        transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .header-btn {
@@ -269,29 +279,17 @@
         transition: width 0.5s ease;
     }
 
-    .header-btn-link {
-        padding: 18px 85px;
-        transition: width 0.5s ease;
-    }
-
     .header-menu {
         display: none;
         transition: display 0.5s ease;
     }
 
-    .container-header {
-        margin: 20px 100px 80px 100px;
-        transition: margin 0.5s ease;
-    }
-
     .header-menu-list {
         display: flex;
-        margin-right: 50px;
-        margin-left: 97px;
     }
 
     .header-menu-list-item {
-        margin-right: 40px;
+        margin-right: 28px;
         color: #FFF;
         font-family: DM Sans;
         font-size: 14px;
@@ -310,5 +308,21 @@
 
     .backdrop {
         display: none;
+    }
+}
+
+/* =========================== DESCTOP 1440 ============================ */
+
+@media screen and (min-width: 1440px) {
+    .header-nav {
+        width: 982px;
+        max-width: 982px;
+        padding-right: 0px;
+        transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .header-menu-list-item {
+        margin-right: 40px;
+        transition: margin-right 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
