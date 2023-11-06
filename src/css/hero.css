@@ -10,6 +10,9 @@
     border-radius: 30px;
     background-color: #1D1D1D;
 }
+.hero-content {
+    margin-bottom: 31px;
+}
 .hero-title {
     text-transform: none;
     font-size: 40px;
@@ -32,16 +35,15 @@
     display: flex;
     max-width: 253px;
     gap: 40px;
-    margin-bottom: 31px;
 }
-.hero-students {
-}
+
 .hero-students-list {
     width: 109px;
     height: 44px;
     position:relative;
     margin-bottom: 4px;
 }
+
 .hero-student-item {
     position: absolute;
 }
@@ -71,6 +73,7 @@
     max-width: 89px;
     gap: 4px;
 }
+
 .hero-arrow {
     fill: #FFF;
 }
@@ -115,14 +118,85 @@
 }
 
 @media screen and (min-width: 768px) {
+    .hero {
+        padding-bottom: 100px;
+    }
+
     .hero-cover {
         padding: 64px 32px 0;
         border-radius: 30px;
     }
-
+    
+    .hero-content {
+        margin-bottom: 41px;
+    }
     .hero-title {
         font-size: 60px;
         line-height: 1.07em;
-        max-width: 500px;
+        max-width: 495px;
     }
+    .hero-description {
+        max-width: 418px;
     }
+    .hero-students {
+        display: flex;
+        gap: 12px;
+    }
+    .hero-students-list {
+        width: 137px;
+        height: 54px;
+        margin-bottom: 0;
+    }
+    .hero-student-img {
+        height: 54px;
+        width: 54px;
+    }
+    .hero-link{
+        flex-direction: column;
+        font-size: 16px;
+        line-height: 1.25;
+        max-width: 82px;
+        gap: 8px;
+    }
+    .hero-arrow {
+        width: 18px;
+        height: 9px;
+    }
+    .hero-img {
+        max-width: 393px;
+    }
+    
+}
+@media screen and (min-width: 1280px) {
+    .hero {
+        padding-bottom: 150px;
+    }
+
+    .hero-cover {
+        display: flex;
+        gap: 20px;
+        padding: 80px 50px 0;
+    }
+
+    .hero-content {
+        margin-bottom: 0;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 51px;
+    }
+
+    .hero-title {
+        font-size: 60px;
+        line-height: 1.06em;
+        max-width: 495px;
+    }
+
+    .hero-box {
+        max-width: 388px;
+        margin-top: auto;
+    }
+    .hero-img {
+        max-width: 397px;
+    }
+}
