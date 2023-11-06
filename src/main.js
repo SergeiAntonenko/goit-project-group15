@@ -5,6 +5,7 @@
 */
 
 const mobMenuRef = document.querySelector('#menu');
+const bodyRef = document.querySelector('body');
 
 mobMenuRef
     .querySelector('#close-menu')
@@ -14,8 +15,10 @@ document.querySelector('#show-menu').addEventListener('click', openMenu);
 
 function closeMenu() {
     mobMenuRef.classList.remove('is-open');
+    bodyRef.classList.remove('overflow-hidden')
 }
 
 function openMenu() {
     mobMenuRef.classList.add('is-open');
+    bodyRef.classList.add('overflow-hidden')
 }
