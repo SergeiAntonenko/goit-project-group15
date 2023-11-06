@@ -5,10 +5,6 @@
     background-size: cover;
     padding-top: 90px;
 }
-.container-hero {
-}
-.container {
-}
 .hero-cover {
     padding: 40px 20px 0;
     border-radius: 30px;
@@ -98,8 +94,6 @@
     fill: #BEA69E;
     stroke: #121212;
 }
-.hero-rating-content {
-}
 .hero-reviews-label {
     text-transform: capitalize;
     font-size: 14px;
@@ -112,9 +106,6 @@
     line-height: 1.13;
     font-weight: 500;
     letter-spacing: -0.04em;
-}
-.hero-picture {
-
 }
 .hero-img {
     max-width: 259px;
