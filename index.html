@@ -20,7 +20,7 @@
     />
     
     <script type="module" crossorigin src="/goit-project-group15/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/goit-project-group15/assets/index-ccc84411.css">
+    <link rel="stylesheet" href="/goit-project-group15/assets/index-4d898179.css">
   </head>
   <body>
     <div class="backdrop" id="menu"> <!-- Insert is-open here  -->
@@ -589,26 +589,28 @@
     <footer class="footer" id="contacts">
   <div class="container">
     <div class="footer-container">
-      <ul class="footer-adress">
-        <li class="footer-adress-icon">
-          <svg class="footer-icon" width="127" height="20">
+      <div class="footer-contacts">
+        <a class="footer-logo" href="#">
+          <svg class="footer-icon">
             <use href="/goit-project-group15/assets/icons-c23a005f.svg#logo"></use>
           </svg>
-        </li>
-        <li class="footer-adress-list">
-          <a class="footer-adress-link" href="tel:+380665438912"
-            >UK: +38 066 543 8912</a
-          >
-        </li>
-        <li class="footer-adress-list">
-          <a
-            class="footer-adress-link"
-            href="https://www.google.com/maps/place/GoIT/@50.4249653,30.5315088,17z/data=!3m1!4b1!4m6!3m5!1s0x40d4d96f5139689b:0xa1f7c65300bebad1!8m2!3d50.4249619!4d30.5340837!16s%2Fg%2F11b6hypvsd?hl=uk-UK&entry=ttu"
-            target="_blank"
-            >Ukraine, Kyiv</a
-          >
-        </li>
-      </ul>
+        </a>
+        <ul class="footer-adress">
+          <li class="footer-adress-list">
+            <a class="footer-adress-link" href="tel:+380665438912"
+              >UK: +38 066 543 8912</a
+            >
+          </li>
+          <li class="footer-adress-list">
+            <a
+              class="footer-adress-link"
+              href="https://www.google.com/maps/place/GoIT/@50.4249653,30.5315088,17z/data=!3m1!4b1!4m6!3m5!1s0x40d4d96f5139689b:0xa1f7c65300bebad1!8m2!3d50.4249619!4d30.5340837!16s%2Fg%2F11b6hypvsd?hl=uk-UK&entry=ttu"
+              target="_blank"
+              >Ukraine, Kyiv</a
+            >
+          </li>
+        </ul>
+      </div>
       <div class="footer-menu">
         <ul class="footer-menu-social">
           <li class="footer-menu-link">
@@ -654,19 +656,17 @@
           </li>
         </ul>
       </div>
-      <div class="footer-form-container">
-        <form class="footer-form" action="#">
-          <input
-            class="footer-form-input"
-            name="footer-email"
-            type="email"
-            placeholder="Enter your email"
-            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
-          />
-          <p class="footer-error-field">User email is invalid</p>
-        </form>
+      <form class="footer-form" action="#">
+        <input
+          class="footer-form-input"
+          name="footer-email"
+          type="email"
+          placeholder="Enter your email"
+          pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+          required
+        />
         <button class="form-btn" type="submit">Go</button>
-      </div>
+      </form>
     </div>
     <div class="footer-privacy">
       <div class="footer-privacy-link">
