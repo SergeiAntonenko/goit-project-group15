@@ -1,10 +1,19 @@
 .hero {
     padding-bottom: 80px;
-    background-image: url('/img/hero/background-mob.png');
+    background-image: url('/img/hero/bg-mob.webp');
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 90px;
 }
+
+@media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+        background-image: url('/img/hero/bg-mob@2x.webp');
+    }
+}
+
 .hero-cover {
     padding: 40px 20px 0;
     border-radius: 30px;
@@ -130,7 +139,15 @@
     .hero {
         padding-bottom: 100px;
         padding-top: 120px;
-        background-image: url('/img/hero/background-tab.png');
+        background-image: url('/img/hero/bg-tab.webp');
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero {
+            background-image: url('/img/hero/bg-tab@2x.webp');
+        }
     }
 
     .hero-cover {
@@ -182,7 +199,15 @@
     .hero {
         padding-bottom: 150px;
         padding-top: 160px;
-        background-image: url('/img/hero/background-desk.png');
+        background-image: url('/img/hero/bg-desk.webp');
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero {
+            background-image: url('/img/hero/bg-desk@2x.webp');
+        }
     }
 
     .hero-cover {
@@ -216,6 +241,14 @@
 
 @media screen and (min-width: 1440px) {
     .hero {
-        background-image: url('/img/hero/background-large.png');
+        background-image: url('/img/hero/bg-large.webp');
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero {
+            background-image: url('/img/hero/bg-large@2x.webp');
+        }
     }
 }
