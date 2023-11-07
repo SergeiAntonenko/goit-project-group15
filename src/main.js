@@ -11,6 +11,11 @@ mobMenuRef
     .querySelector('#close-menu')
     .addEventListener('click', closeMenu);
 
+mobMenuRef
+    .querySelector('ul')
+    .addEventListener('click', closeMenuByItemClick);
+    
+
 document.querySelector('#show-menu').addEventListener('click', openMenu);
 
 function closeMenu() {
@@ -21,4 +26,10 @@ function closeMenu() {
 function openMenu() {
     mobMenuRef.classList.add('is-open');
     bodyRef.classList.add('overflow-hidden')
+}
+
+function closeMenuByItemClick(event) {
+    if (event.target !== event.currentTarget) {
+        closeMenu()
+    }
 }
