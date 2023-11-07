@@ -10,10 +10,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 14px;
 }
 
 .header-nav {
+  height: 60px;
   padding: 9px 20px;
+  gap: 14px;
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   background: #121212;
@@ -34,21 +37,21 @@
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
-
 .header-logo-svg {
   fill: #ffffff;
 }
 
 .header-camera {
+  display: flex;
   width: 32px;
   height: 32px;
   fill: #bea69e66;
   background-color: #1d1d1d;
   border: 0px;
   border-radius: 50%;
-  padding: 8px;
-  margin-right: 14px;
+  align-items: center;
+  justify-content: center;
+  /* margin-right: 14px; */
 }
 
 .header-camera:hover,
@@ -64,13 +67,22 @@
 .header-menu {
   display: flex;
   border: 0px;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
   background-color: #121212;
 }
 
 .header-menu-svg {
+  display: flex;
   stroke: #ffffff;
   align-items: center;
-  flex-shrink: 0;
+  justify-content: center;
+}
+
+.header-menu-svg:hover, .header-menu-svg:active {
+  stroke: #bea69e;
+  transition: stroke 0.5s ease;
 }
 
 .header-menu-list {
@@ -122,13 +134,21 @@
 }
 
 .modal-btn {
+  z-index: 30;
   position: absolute;
   right: 20px;
   top: 20px;
   height: 32px;
   width: 32px;
   border: 0;
+  padding: 0;
+  margin: 0;
   background-color: transparent;
+}
+
+.modal-btn-svg:hover, .modal-btn-svg:active {
+  stroke: #FFF;
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-btn-svg {
@@ -137,7 +157,16 @@
 
 .modal-menu {
   position: absolute;
-  padding: 180px 20px;
+  top: 180px;
+  left: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.modal-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .modal-menu-list-item {
@@ -148,12 +177,7 @@
   font-weight: 400;
   line-height: normal;
   text-transform: uppercase;
-  padding-bottom: 20px;
   white-space: nowrap;
-}
-
-.modal-menu-list-item:last-child {
-  padding-bottom: 0;
 }
 
 .modal-menu-list-item:active,
@@ -164,9 +188,9 @@
 /* =========================== TABLET ============================ */
 
 @media screen and (min-width: 768px) {
-  .header-nav {
-    height: 60px;
-    margin-right: 20px;
+
+  .container-header {
+    gap: 20px;
   }
 
   .header-camera {
@@ -210,11 +234,12 @@
 
   .modal-menu {
     position: absolute;
-    padding: 232px 64px;
+    top: 232px;
+    left: 64px;
   }
 
-  .modal-menu-list-item {
-    padding-bottom: 28px;
+  .modal-menu-list {
+    gap: 28px;
   }
 }
 
@@ -247,10 +272,10 @@
 
   .header-menu-list {
     display: flex;
+    gap: 28px;
   }
 
   .header-menu-list-item {
-    margin-right: 28px;
     color: #fff;
     font-family: DM Sans;
     font-size: 14px;
@@ -283,7 +308,7 @@
     }
 
     .header-menu-list-item {
-      margin-right: 40px;
+      gap: 40;
       transition: margin-right 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
   }
