@@ -2,6 +2,8 @@
     max-width: 375px;
     margin: 0 auto;
     padding-bottom: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .courses-title {
@@ -12,7 +14,6 @@
     line-height: 1.14;
     letter-spacing: -1.12px;
     margin-bottom: 20px;
-    margin-left: 20px;
 }
 
 .courses-span {
@@ -25,10 +26,8 @@
     font-style: normal;
     font-weight: 400;
     line-height: 1.28;
-    letter-spacing: -0.28px;
+    letter-spacing: -0.02em;
     margin-bottom: 40px;
-    margin-left: 20px;
-    margin-right: 20px;
 }
 
 .courses-ol {
@@ -39,18 +38,13 @@
     font-style: normal;
     font-weight: 400;
     line-height: 1.28;
-    letter-spacing: -0.28px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-top: 0;
-    margin-bottom: 0;
+    letter-spacing: -0.02em;
+    padding: 0;
 }
 
 ol li::before {
     content: counter(item, decimal-leading-zero);
     counter-increment: item;
-    margin-top: 28px;
-    margin-left: 28px;
 }
 
 .courses-link {
@@ -59,8 +53,8 @@ ol li::before {
     border-radius: 50%;
     width: 32px;
     height: 32px;
-    right: 28px;
     top: -16px;
+    right: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -90,9 +84,9 @@ ol li::before {
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.20);
     background: linear-gradient(180deg, #060707 0%, #1D1D1D 100%);
-    height: 398px;
     margin-bottom: 20px;
-    padding-top: 28px;
+    padding: 28px;
+    max-width: 335px;
 }
 
 .card-three {
@@ -106,10 +100,6 @@ ol li::before {
     font-weight: 500;
     line-height: 1.14;
     margin-top: 42px;
-    margin-left: 28px;
-    margin-right: 28px;
-    margin-bottom: 164px;
-    width: 262px;
 }
 
 .courses-text-item {
@@ -118,10 +108,7 @@ ol li::before {
     font-style: normal;
     font-weight: 400;
     line-height: 1.28;
-    letter-spacing: -0.28px;
-    margin-bottom: 28px;
-    margin-left: 28px;
-    margin-right: 28px;
+    letter-spacing: -0.02em;
 }
 
 @media screen and (min-width: 320px) {
@@ -149,34 +136,31 @@ ol li::before {
         flex-direction: row;
         gap: 58px;
         margin-bottom: 50px;
+        justify-content: space-between;
     }
 
     .courses-ol {
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
-        padding: 0;
         margin: 0;
     }
 
     .courses-item {
-        width: 342px;
-        height: 452px;
         margin-bottom: 0;
         background: linear-gradient(180deg, #060707 0%, #1D1D1D 100%);
-        padding-top: 32px;
+        max-width: 342px;
     }
 
     .courses-title {
         font-size: 48px;
         line-height: 1.12;
-        letter-spacing: -1.92px;
-        width: 265px;
+        letter-spacing: -0.04em;
         margin: 0;
     }
 
     .courses-title-item {
-        width: 262px;
+        max-width: 262px;
         margin-bottom: 180px;
         margin-top: 46px;
     }
@@ -184,20 +168,18 @@ ol li::before {
     .courses-text {
         font-size: 16px;
         line-height: 1.25;
-        letter-spacing: -0.32px;
+        letter-spacing: -0.02em;
         display: flex;
         align-items: center;
-        width: 381px;
+        max-width: 381px;
         margin: 0;
+        flex-grow: 1;
     }
 
     .courses-text-item {
         font-size: 16px;
         line-height: 1.25;
         letter-spacing: -0.02em;
-        margin-left: 32px;
-        margin-right: 32px;
-        margin-bottom: 32px;
     }
 
 }
@@ -215,13 +197,17 @@ ol li::before {
         gap: 0;
     }
 
-    .courses-text {
-        width: 405px;
-    }
-
     .courses-ol {
         flex-wrap: nowrap;
         justify-content: space-between;
+    }
+
+    .courses-item {
+        max-width: 347px;
+    }
+
+    .courses-text {
+        max-width: 405px;
     }
 }
 
@@ -233,11 +219,11 @@ ol li::before {
     }
 
     .courses-item {
-        width: 400px;
+        max-width: 400px;
     }
 
     .courses-text-item {
-        width: 336px;
+        max-width: 336px;
     }
 
     .courses-title-item {
@@ -245,6 +231,6 @@ ol li::before {
     }
 
     .courses-text {
-        width: 565px;
+        max-width: 565px;
     }
 }
