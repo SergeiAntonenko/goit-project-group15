@@ -96,6 +96,7 @@
   display: flex;
   gap: 8px;
   flex-grow: 1;
+  position: relative;
 }
 
 .footer-form-input {
@@ -107,6 +108,7 @@
   border-radius: 12px;
   background: #fff;
   border: none;
+  outline: transparent;
 }
 
 .footer-form-input::placeholder {
@@ -129,6 +131,23 @@
 .form-btn:hover,
 .form-btn:focus {
   background-color: #bea69e;
+}
+
+.footer-error-field {
+  font-size: 14px;
+  padding-left: 14px;
+  color: rgb(235, 98, 93);
+  display: none;
+  position: absolute;
+  top: 70px;
+}
+
+.footer-form-input:invalid:focus {
+  outline: 2px solid rgb(235, 98, 93);
+}
+
+.footer-form-input:invalid:focus + p {
+  display: block;
 }
 
 .footer-privacy {
