@@ -1,13 +1,48 @@
+<div class="backdrop" id="menu">
+    <div class="modal">
+        <button class="modal-btn" id="close-menu">
+            <svg class="modal-btn-svg" width="32" height="32">
+                <use href="./img/icons.svg#close"></use>
+            </svg>
+        </button>
+        <div class="modal-menu">
+            <ul class="modal-menu-list">
+                <li class="modal-menu-list-item"><a class="modal-menu-list-item-link" href="#about_us">About Us</a></li>
+                <li class="modal-menu-list-item"><a class="modal-menu-list-item-link" href="#our_courses">Our courses</a></li>
+                <li class="modal-menu-list-item"><a class="modal-menu-list-item-link" href="#our_mentors">Our mentors</a></li>
+                <li class="modal-menu-list-item"><a class="modal-menu-list-item-link" href="#reviews">Reviews</a></li>
+                <li class="modal-menu-list-item"><a class="modal-menu-list-item-link" href="#contacts">contacts</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
 <header class="header">
-    <div class="header-container">
+    <div class="container-header container">
         <nav class="header-nav">
-            <img class="header-logo" src="../img/header/logo.svg" width="127" height="20">
-            <button class="header-camera-btn">
-                С
+            <a class="header-logo" href="#">
+                <svg class="header-logo-svg" width="127" height="20">
+                    <use href="./img/icons.svg#logo"></use>
+                </svg>
+            </a>
+            <a class="header-camera" href="#sign-up">
+                    <svg class="header-camera-svg" width="16" height="16">
+                        <use href="./img/icons.svg#camera"></use>
+                    </svg>
+            </a>
+            <button class="header-menu" id="show-menu">
+                <svg class="header-menu-svg" width="32" height="22">
+                    <use href="./img/icons.svg#nav"></use>
+                </svg>
             </button>
-            <button class="header-menu-btn">
-                М
-            </button>
+            <ul class="header-menu-list">
+                <li class="header-menu-list-item"><a class="header-menu-list-item-link" href="#about_us">About Us</a></li>
+                <li class="header-menu-list-item"><a class="header-menu-list-item-link" href="#our_courses">Our courses</a></li>
+                <li class="header-menu-list-item"><a class="header-menu-list-item-link" href="#our_mentors">Our mentors</a></li>
+                <li class="header-menu-list-item"><a class="header-menu-list-item-link" href="#reviews">Reviews</a></li>
+                <li class="header-menu-list-item"><a class="header-menu-list-item-link" href="#contacts">contacts</a></li>
+            </ul>
         </nav>
+        <a class="header-btn" href="#sign-up">Sign Up</a>
     </div>
 </header>

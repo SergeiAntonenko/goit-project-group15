@@ -1,1 +1,91 @@
-<section class="signup"></section>
+<section class="sign-up" id="sign-up">
+  <div class="container">
+    <div class="sign-up-wrap">
+      <h2 class="section-title">Sign <span>Up</span></h2>
+      <p class="sing-up-text">
+        Please use the form below to contact us. Enter your name, email, and
+        message and we'll get back to you shortly.
+      </p>
+      <form class="sign-up-form">
+        <div class="sign-up-form-wrap">
+          <input
+            class="form-field"
+            type="text"
+            name="user-name"
+            pattern="[A-Za-z]{1,15}"
+            placeholder="Enter your name"
+          />
+          <p class="error-field">User name is invalid</p>
+          <input
+            class="form-field"
+            type="email"
+            name="user-email"
+            placeholder="Enter your email"
+            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+          />
+          <p class="error-field">User email is invalid</p>
+          <textarea
+            class="form-field"
+            name="user-comment"
+            rows="4"
+            placeholder="Message"
+          ></textarea>
+        </div>
+        <button class="submit-btn" type="submit">Send</button>
+        <p class="privacy-text">
+          By clicking on "Send" button, you agree to our
+          <a class="privacy-text-link" href="/">Privacy Policy</a>,<br
+            class="break"
+          />
+          and allow Promodo to use this information for marketing purposes.
+        </p>
+      </form>
+    </div>
+    <ul class="sign-up-images">
+      <li class="sign-up-item-sm">
+        <picture>
+          <source
+            srcset="
+              ./img/sign_up/lens-1440.png    1x,
+              ./img/sign_up/lens-1440-2x.png 2x
+            "
+            media="(min-width: 1440px)"
+          />
+          <source
+            srcset="./img/sign_up/lens.png 1x, ./img/sign_up/lens-2x.png 2x"
+            media="(min-width: 1280px)"
+          />
+          <img
+            class="sing-up-sm-image"
+            src="./img/sign_up/lens.png"
+            alt="Camera Lens"
+            width="150"
+            height="142"
+          />
+        </picture>
+      </li>
+      <li class="sign-up-item-lg">
+        <picture>
+          <source
+            srcset="
+              ./img/sign_up/camera-1440.png    1x,
+              ./img/sign_up/camera-1440-2x.png 2x
+            "
+            media="(min-width: 1440px)"
+          />
+          <source
+            srcset="./img/sign_up/camera.png 1x, ./img/sign_up/camera-2x.png 2x"
+            media="(min-width: 1280px)"
+          />
+          <img
+            class="sing-up-lg-image"
+            src="./img/sign_up/camera.png"
+            alt="Camera"
+            width="240"
+            height="396"
+          />
+        </picture>
+      </li>
+    </ul>
+  </div>
+</section>
